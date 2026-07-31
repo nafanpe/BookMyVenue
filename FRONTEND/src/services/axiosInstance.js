@@ -42,11 +42,12 @@ axiosInstance.interceptors.response.use(
         return response;
     },
     (error) => {
+        console.log(error, "test error")
         if (error.response && error.response.status === 401) {
             console.warn("Session expired. Logging out.");
             Cookies.remove("authToken");
             Cookies.remove("userRole");            
-            window.location.href = "/auth?expired=true";
+            window.location.href = "/auth";
         }
         
         return Promise.reject(error);
