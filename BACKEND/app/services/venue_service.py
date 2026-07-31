@@ -355,11 +355,11 @@ def update_venue_approval_status(
             BookMyVenue Team
         """
 
-        send_email(
-            to_email=email_id.email,
-            subject="Venue Approval Approved",
-            body=body
-        )
+        # send_email(
+        #     to_email=email_id.email,
+        #     subject="Venue Approval Approved",
+        #     body=body
+        # )
 
     elif status.lower() == "rejected":
         venue.is_approved = False
@@ -389,11 +389,11 @@ def update_venue_approval_status(
             BookMyVenue Team
         """
 
-        send_email(
-            to_email=email_id.email,
-            subject="Venue Approval Rejection",
-            body=body
-        )
+        # send_email(
+        #     to_email=email_id.email,
+        #     subject="Venue Approval Rejection",
+        #     body=body
+        # )
 
     else:
         raise Exception("Status must be either 'approved' or 'rejected'")
