@@ -29,7 +29,8 @@ origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://bookmyvenue-pouq.onrender.com",
-    "https://bmvfrontend.vercel.app"
+    "https://bmvfrontend.vercel.app",
+    "https://bookmyvenue-1-dx5v.onrender.com"
 ]
 
 app.add_middleware(
